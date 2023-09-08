@@ -1,17 +1,15 @@
 <template>
-  TODO: display the post
+  <div>
+    <h1 class="text-2xl font-bold">{{ props.post.title }}</h1>
+    <p class="mt-4">{{ props.post.body }}</p>
+  </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  name: 'VPost',
-  props: {
+<script setup lang="ts">
+  const props = defineProps({
     post: {
       type: Object,
       required: true
     }
-  }
-})
+  })
 </script>
