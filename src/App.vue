@@ -5,7 +5,7 @@
 
       <div class="flex w-full justify-center align-center mt-[80px]">
         <button 
-          class="mr-4 rounded-full border border-blue-500 text-blue-500 text-white px-4 py-2"
+          class="mr-4 rounded-full border border-blue-500 text-blue-500 px-4 py-2"
           :class="{'border-slate-300 text-slate-300': isDisabled}"
           @click="onPrevPost" 
           :disabled="isDisabled"
